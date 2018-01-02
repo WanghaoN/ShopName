@@ -1,0 +1,53 @@
+//
+//  SetCell.m
+//  SellShop
+//
+//  Created by 云媒 on 2017/12/27.
+//  Copyright © 2017年 云筹电子商务有限公司. All rights reserved.
+//
+
+#import "SetCell.h"
+
+@implementation SetCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    if (self= [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
+        [self creatView];
+    }
+    return self;
+}
+-(void)creatView
+{
+    CALayer* line = [CALayer layer];
+    
+    [line setBackgroundColor:[Utility colorWithHex:@"#32435D"].CGColor];
+    [line setOpacity:0.29];
+    [line setBounds:CGRectMake(0, 0, SCREENWIDTH-40*KproW,.5*KproH)];
+    
+    [line setPosition:CGPointMake(SCREENWIDTH/2-2.5, 54)];
+    [self.layer addSublayer:line];
+    
+    UIImageView *cell_go_imgView = [CreatControls createImageViewWithFrame:CGRectMake(SCREENWIDTH -31*KproW, 15*KproH, 14*KproW, 20*KproH) ImageName:@"arrow_more" UserInteractionEnabled:NO];
+    [self addSubview:cell_go_imgView];
+    
+    self. title_label = [[UILabel alloc] initWithFrame:CGRectMake(25.5*KproW, 5*KproH, SCREENWIDTH-80, 40*KproH)];
+    self.title_label.font = [UIFont fontWithName:@"PingFangSC-Light" size:17*KproH];
+    self. title_label.backgroundColor = [UIColor whiteColor];
+    self.title_label.textAlignment = NSTextAlignmentLeft;
+    self.title_label.textColor = [Utility colorWithHex:@"#777777"];
+
+    [self addSubview:self.title_label];
+}
+-(void)setData:(NSString *)name{
+   self.title_label.text =name;
+}
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+}
+
+@end

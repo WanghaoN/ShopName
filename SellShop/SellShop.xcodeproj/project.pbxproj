@@ -80,9 +80,21 @@
 		1558A0D81FF366E40060DB1C /* ProductCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A0D71FF366E40060DB1C /* ProductCollectionController.m */; };
 		1558A0DB1FF367200060DB1C /* ReceiveAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A0DA1FF367200060DB1C /* ReceiveAddressController.m */; };
 		1558A0E81FF367C70060DB1C /* CreditCardManageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A0E71FF367C70060DB1C /* CreditCardManageController.m */; };
-		1558A0EB1FF367FA0060DB1C /* InviteFriendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A0EA1FF367FA0060DB1C /* InviteFriendController.m */; };
 		1558A0EE1FF3683A0060DB1C /* OnlineServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A0ED1FF3683A0060DB1C /* OnlineServiceController.m */; };
 		1558A0F31FF483120060DB1C /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1558A0F21FF483110060DB1C /* user_icon.png */; };
+		1558A16C1FFB5F790060DB1C /* RefundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A15E1FFB5F780060DB1C /* RefundController.m */; };
+		1558A16D1FFB5F790060DB1C /* ToBeReceivedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A1621FFB5F780060DB1C /* ToBeReceivedController.m */; };
+		1558A16E1FFB5F790060DB1C /* PendingPaymentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A1651FFB5F780060DB1C /* PendingPaymentController.m */; };
+		1558A16F1FFB5F790060DB1C /* AllOrdersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A1681FFB5F790060DB1C /* AllOrdersController.m */; };
+		1558A1701FFB5F790060DB1C /* CommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A16B1FFB5F790060DB1C /* CommentController.m */; };
+		1558A1741FFB5F920060DB1C /* AddCreditCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A1731FFB5F920060DB1C /* AddCreditCardController.m */; };
+		1558A1781FFB5FAD0060DB1C /* InviteFriendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A1771FFB5FAD0060DB1C /* InviteFriendController.m */; };
+		1558A1821FFB602E0060DB1C /* HomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A17E1FFB602D0060DB1C /* HomeHeadView.m */; };
+		1558A1831FFB602E0060DB1C /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A17F1FFB602D0060DB1C /* HomeCollectionViewCell.m */; };
+		1558A1861FFB60760060DB1C /* ShowMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A1851FFB60760060DB1C /* ShowMessage.m */; };
+		1558A18A1FFB60B70060DB1C /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A1891FFB60B70060DB1C /* ImagePlayerView.m */; };
+		1558A18D1FFB615C0060DB1C /* SXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A18B1FFB615B0060DB1C /* SXButton.m */; };
+		1558A1901FFB61C00060DB1C /* OrderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558A18E1FFB61C00060DB1C /* OrderButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,10 +270,34 @@
 		1558A0E61FF367C70060DB1C /* CreditCardManageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditCardManageController.h; sourceTree = "<group>"; };
 		1558A0E71FF367C70060DB1C /* CreditCardManageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditCardManageController.m; sourceTree = "<group>"; };
 		1558A0E91FF367FA0060DB1C /* InviteFriendController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InviteFriendController.h; sourceTree = "<group>"; };
-		1558A0EA1FF367FA0060DB1C /* InviteFriendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InviteFriendController.m; sourceTree = "<group>"; };
 		1558A0EC1FF3683A0060DB1C /* OnlineServiceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnlineServiceController.h; sourceTree = "<group>"; };
 		1558A0ED1FF3683A0060DB1C /* OnlineServiceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlineServiceController.m; sourceTree = "<group>"; };
 		1558A0F21FF483110060DB1C /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
+		1558A15D1FFB5F780060DB1C /* RefundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefundController.h; sourceTree = "<group>"; };
+		1558A15E1FFB5F780060DB1C /* RefundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefundController.m; sourceTree = "<group>"; };
+		1558A1611FFB5F780060DB1C /* ToBeReceivedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToBeReceivedController.h; sourceTree = "<group>"; };
+		1558A1621FFB5F780060DB1C /* ToBeReceivedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToBeReceivedController.m; sourceTree = "<group>"; };
+		1558A1641FFB5F780060DB1C /* PendingPaymentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendingPaymentController.h; sourceTree = "<group>"; };
+		1558A1651FFB5F780060DB1C /* PendingPaymentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingPaymentController.m; sourceTree = "<group>"; };
+		1558A1661FFB5F780060DB1C /* AllOrdersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllOrdersController.h; sourceTree = "<group>"; };
+		1558A1681FFB5F790060DB1C /* AllOrdersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllOrdersController.m; sourceTree = "<group>"; };
+		1558A16A1FFB5F790060DB1C /* CommentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentController.h; sourceTree = "<group>"; };
+		1558A16B1FFB5F790060DB1C /* CommentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentController.m; sourceTree = "<group>"; };
+		1558A1721FFB5F920060DB1C /* AddCreditCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCreditCardController.h; sourceTree = "<group>"; };
+		1558A1731FFB5F920060DB1C /* AddCreditCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCreditCardController.m; sourceTree = "<group>"; };
+		1558A1771FFB5FAD0060DB1C /* InviteFriendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InviteFriendController.m; path = "../../../../../../../../Desktop/SellShop/SellShop/Class/我的/邀请好友/InviteFriendController.m"; sourceTree = "<group>"; };
+		1558A17E1FFB602D0060DB1C /* HomeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHeadView.m; sourceTree = "<group>"; };
+		1558A17F1FFB602D0060DB1C /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
+		1558A1801FFB602E0060DB1C /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
+		1558A1811FFB602E0060DB1C /* HomeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeadView.h; sourceTree = "<group>"; };
+		1558A1841FFB60760060DB1C /* ShowMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMessage.h; sourceTree = "<group>"; };
+		1558A1851FFB60760060DB1C /* ShowMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMessage.m; sourceTree = "<group>"; };
+		1558A1881FFB60B70060DB1C /* ImagePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePlayerView.h; sourceTree = "<group>"; };
+		1558A1891FFB60B70060DB1C /* ImagePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePlayerView.m; sourceTree = "<group>"; };
+		1558A18B1FFB615B0060DB1C /* SXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXButton.m; sourceTree = "<group>"; };
+		1558A18C1FFB615C0060DB1C /* SXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXButton.h; sourceTree = "<group>"; };
+		1558A18E1FFB61C00060DB1C /* OrderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderButton.m; sourceTree = "<group>"; };
+		1558A18F1FFB61C00060DB1C /* OrderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderButton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,6 +394,7 @@
 		15589FEA1FF0DFEA0060DB1C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1558A17D1FFB60040060DB1C /* View */,
 				15589FEB1FF0DFEA0060DB1C /* Controller */,
 				15589FF01FF0DFEA0060DB1C /* Model */,
 			);
@@ -456,6 +493,8 @@
 		1558A01E1FF0DFEA0060DB1C /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				1558A1841FFB60760060DB1C /* ShowMessage.h */,
+				1558A1851FFB60760060DB1C /* ShowMessage.m */,
 				1558A01F1FF0DFEA0060DB1C /* MBProgressHUD+MJ.h */,
 				1558A0201FF0DFEA0060DB1C /* MBProgressHUD+MJ.m */,
 				1558A0211FF0DFEA0060DB1C /* MBProgressHUD.bundle */,
@@ -529,6 +568,7 @@
 		1558A0731FF0E8160060DB1C /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				1558A1871FFB60B70060DB1C /* ImagePlayerView */,
 				1558A07C1FF0EC630060DB1C /* Base */,
 				1558A0AB1FF34F710060DB1C /* Masonry */,
 				15589FF61FF0DFEA0060DB1C /* AFNetworking */,
@@ -558,6 +598,8 @@
 				1558A0901FF22FC70060DB1C /* AccountCell.m */,
 				1558A0A81FF349570060DB1C /* PersonalView.h */,
 				1558A0A91FF349570060DB1C /* PersonalView.m */,
+				1558A18F1FFB61C00060DB1C /* OrderButton.h */,
+				1558A18E1FFB61C00060DB1C /* OrderButton.m */,
 				1558A0EF1FF480B80060DB1C /* 全部订单 */,
 				1558A0D11FF366BA0060DB1C /* 商品收藏 */,
 				1558A0D41FF366BA0060DB1C /* 收货地址 */,
@@ -601,6 +643,8 @@
 				1558A08E1FF22C7A0060DB1C /* ConfigAPI.h */,
 				1558A08B1FF22C5E0060DB1C /* CreatControls.h */,
 				1558A08C1FF22C5E0060DB1C /* CreatControls.m */,
+				1558A18C1FFB615C0060DB1C /* SXButton.h */,
+				1558A18B1FFB615B0060DB1C /* SXButton.m */,
 			);
 			path = DBUtility;
 			sourceTree = "<group>";
@@ -679,8 +723,8 @@
 			children = (
 				1558A0D61FF366E40060DB1C /* ProductCollectionController.h */,
 				1558A0D71FF366E40060DB1C /* ProductCollectionController.m */,
-				1558A0E41FF367960060DB1C /* Model */,
-				1558A0E51FF367960060DB1C /* View */,
+				1558A17A1FFB5FBC0060DB1C /* Model */,
+				1558A1791FFB5FBC0060DB1C /* View */,
 			);
 			path = "商品收藏";
 			sourceTree = "<group>";
@@ -690,8 +734,9 @@
 			children = (
 				1558A0E61FF367C70060DB1C /* CreditCardManageController.h */,
 				1558A0E71FF367C70060DB1C /* CreditCardManageController.m */,
-				1558A0E01FF3677F0060DB1C /* Model */,
-				1558A0E11FF3677F0060DB1C /* View */,
+				1558A1711FFB5F920060DB1C /* 添加信用卡 */,
+				1558A1751FFB5F9C0060DB1C /* Model */,
+				1558A1761FFB5F9C0060DB1C /* View */,
 			);
 			path = "信用卡管理";
 			sourceTree = "<group>";
@@ -700,9 +745,7 @@
 			isa = PBXGroup;
 			children = (
 				1558A0E91FF367FA0060DB1C /* InviteFriendController.h */,
-				1558A0EA1FF367FA0060DB1C /* InviteFriendController.m */,
-				1558A0DE1FF367710060DB1C /* Model */,
-				1558A0DF1FF367710060DB1C /* View */,
+				1558A1771FFB5FAD0060DB1C /* InviteFriendController.m */,
 			);
 			path = "邀请好友";
 			sourceTree = "<group>";
@@ -712,8 +755,8 @@
 			children = (
 				1558A0D91FF367200060DB1C /* ReceiveAddressController.h */,
 				1558A0DA1FF367200060DB1C /* ReceiveAddressController.m */,
-				1558A0E31FF3678C0060DB1C /* Model */,
-				1558A0E21FF3678B0060DB1C /* View */,
+				1558A17B1FFB5FCB0060DB1C /* Model */,
+				1558A17C1FFB5FCB0060DB1C /* View */,
 			);
 			path = "收货地址";
 			sourceTree = "<group>";
@@ -723,103 +766,144 @@
 			children = (
 				1558A0EC1FF3683A0060DB1C /* OnlineServiceController.h */,
 				1558A0ED1FF3683A0060DB1C /* OnlineServiceController.m */,
-				1558A0DD1FF367650060DB1C /* Model */,
-				1558A0DC1FF367650060DB1C /* View */,
 			);
 			path = "在线客服";
-			sourceTree = "<group>";
-		};
-		1558A0DC1FF367650060DB1C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		1558A0DD1FF367650060DB1C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		1558A0DE1FF367710060DB1C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		1558A0DF1FF367710060DB1C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		1558A0E01FF3677F0060DB1C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		1558A0E11FF3677F0060DB1C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		1558A0E21FF3678B0060DB1C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		1558A0E31FF3678C0060DB1C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		1558A0E41FF367960060DB1C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		1558A0E51FF367960060DB1C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		1558A0EF1FF480B80060DB1C /* 全部订单 */ = {
 			isa = PBXGroup;
 			children = (
-				1558A0F01FF480B80060DB1C /* Model */,
-				1558A0F11FF480B80060DB1C /* View */,
+				1558A1661FFB5F780060DB1C /* AllOrdersController.h */,
+				1558A1681FFB5F790060DB1C /* AllOrdersController.m */,
+				1558A1631FFB5F780060DB1C /* 待付款 */,
+				1558A1691FFB5F790060DB1C /* 待评价 */,
+				1558A1601FFB5F780060DB1C /* 待收货 */,
+				1558A15C1FFB5F780060DB1C /* 售后:退款 */,
+				1558A1671FFB5F780060DB1C /* Model */,
+				1558A15F1FFB5F780060DB1C /* View */,
 			);
 			path = "全部订单";
 			sourceTree = "<group>";
 		};
-		1558A0F01FF480B80060DB1C /* Model */ = {
+		1558A15C1FFB5F780060DB1C /* 售后:退款 */ = {
+			isa = PBXGroup;
+			children = (
+				1558A15D1FFB5F780060DB1C /* RefundController.h */,
+				1558A15E1FFB5F780060DB1C /* RefundController.m */,
+			);
+			path = "售后:退款";
+			sourceTree = "<group>";
+		};
+		1558A15F1FFB5F780060DB1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1558A1601FFB5F780060DB1C /* 待收货 */ = {
+			isa = PBXGroup;
+			children = (
+				1558A1611FFB5F780060DB1C /* ToBeReceivedController.h */,
+				1558A1621FFB5F780060DB1C /* ToBeReceivedController.m */,
+			);
+			path = "待收货";
+			sourceTree = "<group>";
+		};
+		1558A1631FFB5F780060DB1C /* 待付款 */ = {
+			isa = PBXGroup;
+			children = (
+				1558A1641FFB5F780060DB1C /* PendingPaymentController.h */,
+				1558A1651FFB5F780060DB1C /* PendingPaymentController.m */,
+			);
+			path = "待付款";
+			sourceTree = "<group>";
+		};
+		1558A1671FFB5F780060DB1C /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		1558A0F11FF480B80060DB1C /* View */ = {
+		1558A1691FFB5F790060DB1C /* 待评价 */ = {
+			isa = PBXGroup;
+			children = (
+				1558A16A1FFB5F790060DB1C /* CommentController.h */,
+				1558A16B1FFB5F790060DB1C /* CommentController.m */,
+			);
+			path = "待评价";
+			sourceTree = "<group>";
+		};
+		1558A1711FFB5F920060DB1C /* 添加信用卡 */ = {
+			isa = PBXGroup;
+			children = (
+				1558A1721FFB5F920060DB1C /* AddCreditCardController.h */,
+				1558A1731FFB5F920060DB1C /* AddCreditCardController.m */,
+			);
+			path = "添加信用卡";
+			sourceTree = "<group>";
+		};
+		1558A1751FFB5F9C0060DB1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1558A1761FFB5F9C0060DB1C /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1558A1791FFB5FBC0060DB1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1558A17A1FFB5FBC0060DB1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1558A17B1FFB5FCB0060DB1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1558A17C1FFB5FCB0060DB1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1558A17D1FFB60040060DB1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1558A1801FFB602E0060DB1C /* HomeCollectionViewCell.h */,
+				1558A17F1FFB602D0060DB1C /* HomeCollectionViewCell.m */,
+				1558A1811FFB602E0060DB1C /* HomeHeadView.h */,
+				1558A17E1FFB602D0060DB1C /* HomeHeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1558A1871FFB60B70060DB1C /* ImagePlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				1558A1881FFB60B70060DB1C /* ImagePlayerView.h */,
+				1558A1891FFB60B70060DB1C /* ImagePlayerView.m */,
+			);
+			path = ImagePlayerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -961,10 +1045,14 @@
 				1558A0821FF0F7740060DB1C /* AppDelegate.m in Sources */,
 				1558A0661FF0DFEB0060DB1C /* MJMember.m in Sources */,
 				1558A0CF1FF34F710060DB1C /* View+MASAdditions.m in Sources */,
+				1558A1831FFB602E0060DB1C /* HomeCollectionViewCell.m in Sources */,
 				1558A0681FF0DFEB0060DB1C /* MJType.m in Sources */,
 				1558A0521FF0DFEB0060DB1C /* AFURLConnectionOperation.m in Sources */,
 				1558A0911FF22FC70060DB1C /* AccountCell.m in Sources */,
+				1558A16D1FFB5F790060DB1C /* ToBeReceivedController.m in Sources */,
 				1558A04D1FF0DFEB0060DB1C /* AFHTTPRequestOperation.m in Sources */,
+				1558A1861FFB60760060DB1C /* ShowMessage.m in Sources */,
+				1558A1701FFB5F790060DB1C /* CommentController.m in Sources */,
 				1558A05A1FF0DFEB0060DB1C /* UIButton+AFNetworking.m in Sources */,
 				1558A0641FF0DFEB0060DB1C /* MJFoundation.m in Sources */,
 				1558A0D81FF366E40060DB1C /* ProductCollectionController.m in Sources */,
@@ -972,6 +1060,7 @@
 				1558A07B1FF0E8940060DB1C /* AccountController.m in Sources */,
 				1558A05C1FF0DFEB0060DB1C /* UIProgressView+AFNetworking.m in Sources */,
 				1558A06E1FF0DFEB0060DB1C /* UIView+Extension.m in Sources */,
+				1558A1741FFB5F920060DB1C /* AddCreditCardController.m in Sources */,
 				1558A0551FF0DFEB0060DB1C /* AFURLSessionManager.m in Sources */,
 				1558A0A41FF3459E0060DB1C /* AboutUsController.m in Sources */,
 				1558A0531FF0DFEB0060DB1C /* AFURLRequestSerialization.m in Sources */,
@@ -982,13 +1071,13 @@
 				1558A0E81FF367C70060DB1C /* CreditCardManageController.m in Sources */,
 				1558A09B1FF342DD0060DB1C /* ChangePassWordController.m in Sources */,
 				1558A05D1FF0DFEB0060DB1C /* UIRefreshControl+AFNetworking.m in Sources */,
-				1558A0EB1FF367FA0060DB1C /* InviteFriendController.m in Sources */,
 				1558A0C91FF34F710060DB1C /* MASConstraintMaker.m in Sources */,
 				1558A0541FF0DFEB0060DB1C /* AFURLResponseSerialization.m in Sources */,
 				1558A0C71FF34F710060DB1C /* MASCompositeConstraint.m in Sources */,
 				1558A0621FF0DFEB0060DB1C /* MJArgument.m in Sources */,
 				1558A07F1FF0EC750060DB1C /* BaseController.m in Sources */,
 				1558A0631FF0DFEB0060DB1C /* MJConst.m in Sources */,
+				1558A1781FFB5FAD0060DB1C /* InviteFriendController.m in Sources */,
 				1558A0A11FF3453F0060DB1C /* UserAgreementController.m in Sources */,
 				1558A08A1FF22BBC0060DB1C /* Utility.m in Sources */,
 				1558A06A1FF0DFEB0060DB1C /* NSObject+MJCoding.m in Sources */,
@@ -1001,9 +1090,12 @@
 				1558A0861FF228160060DB1C /* SettingController.m in Sources */,
 				1558A05B1FF0DFEB0060DB1C /* UIImageView+AFNetworking.m in Sources */,
 				1558A0651FF0DFEB0060DB1C /* MJIvar.m in Sources */,
+				1558A1901FFB61C00060DB1C /* OrderButton.m in Sources */,
 				1558A0491FF0DFEB0060DB1C /* HBText1Controller.m in Sources */,
+				1558A18A1FFB60B70060DB1C /* ImagePlayerView.m in Sources */,
 				1558A0591FF0DFEB0060DB1C /* UIAlertView+AFNetworking.m in Sources */,
 				1558A0781FF0E8830060DB1C /* CartController.m in Sources */,
+				1558A18D1FFB615C0060DB1C /* SXButton.m in Sources */,
 				1558A0941FF331110060DB1C /* SetCell.m in Sources */,
 				1558A04E1FF0DFEB0060DB1C /* AFHTTPRequestOperationManager.m in Sources */,
 				1558A06D1FF0DFEB0060DB1C /* UIBarButtonItem+Extension.m in Sources */,
@@ -1017,12 +1109,16 @@
 				1558A0671FF0DFEB0060DB1C /* MJMethod.m in Sources */,
 				1558A0CE1FF34F710060DB1C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				1558A05F1FF0DFEB0060DB1C /* MBProgressHUD+MJ.m in Sources */,
+				1558A16F1FFB5F790060DB1C /* AllOrdersController.m in Sources */,
 				1558A04B1FF0DFEB0060DB1C /* HBUser.m in Sources */,
 				1558A04F1FF0DFEB0060DB1C /* AFHTTPSessionManager.m in Sources */,
 				1558A0581FF0DFEB0060DB1C /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				1558A0C81FF34F710060DB1C /* MASConstraint.m in Sources */,
 				1558A06F1FF0DFEB0060DB1C /* MainNavigationController.m in Sources */,
+				1558A16E1FFB5F790060DB1C /* PendingPaymentController.m in Sources */,
 				1558A0571FF0DFEB0060DB1C /* AFNetworkActivityIndicatorManager.m in Sources */,
+				1558A16C1FFB5F790060DB1C /* RefundController.m in Sources */,
+				1558A1821FFB602E0060DB1C /* HomeHeadView.m in Sources */,
 				1558A0AA1FF349570060DB1C /* PersonalView.m in Sources */,
 				1558A0711FF0DFEB0060DB1C /* MainTabBarView.m in Sources */,
 				1558A08D1FF22C5F0060DB1C /* CreatControls.m in Sources */,

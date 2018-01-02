@@ -40,6 +40,8 @@
 
 #define isXNav (isiPhoneX?44:20)
 #define isXTab (isiPhoneX?33:0)
+#define NavagationBarHeight (SCREENHEIGHT == 812.0 ? 88 : 64)
+#define SafeAreaBottomHeightHeight (SCREENHEIGHT == 812.0 ? 34 : 0)
 
 //我的缩放
 #define KproW SCREENWIDTH/375

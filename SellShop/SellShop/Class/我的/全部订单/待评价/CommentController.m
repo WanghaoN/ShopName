@@ -1,18 +1,20 @@
 //
-//  InviteFriendController.m
+//  CommentController.m
 //  SellShop
 //
-//  Created by 云媒 on 2017/12/27.
-//  Copyright © 2017年 云筹电子商务有限公司. All rights reserved.
-//邀请好友
+//  Created by 云媒 on 2018/1/2.
+//  Copyright © 2018年 云筹电子商务有限公司. All rights reserved.
+//待评价
 
-#import "InviteFriendController.h"
+#import "CommentController.h"
 
-@interface InviteFriendController ()
+@interface CommentController ()
 
 @end
 
-@implementation InviteFriendController
+@implementation CommentController
+
+
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -21,7 +23,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title=@"邀请好友";
+    self.navigationItem.title =@"待评价";
 }
 
 - (void)didReceiveMemoryWarning {

@@ -43,7 +43,7 @@
     button_index =0;
     [self creatFooterView];
     //设置返回按钮
-    self.view.backgroundColor = System_BgGray;
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.myBankCard_tabelView];
 
     BankDic = [NSDictionary dictionaryWithObjectsAndKeys:

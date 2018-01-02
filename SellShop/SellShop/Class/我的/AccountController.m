@@ -15,6 +15,13 @@
 #import "CreditCardManageController.h"//信用卡管理
 #import "InviteFriendController.h"//邀请好友
 #import "OnlineServiceController.h"//在线客服
+#import "OrderButton.h"//订单按钮
+#import "PendingPaymentController.h"//待付款
+#import "CommentController.h"//待评价
+#import "ToBeReceivedController.h"//待收货
+#import "RefundController.h"//售后退款
+#import "AllOrdersController.h"//全部订单
+
 @interface AccountController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UIView *headerView;
@@ -151,7 +158,73 @@
     UILabel*allLabel =[CreatControls createLabelWithFrame:CGRectMake(13*KproW, 5*KproH, 75*KproW, 18*KproH) Font:14*KproH Text:@"全部订单" BackgroundColor:nil];
     allLabel.textAlignment =NSTextAlignmentLeft;
     [self.orderView addSubview:allLabel];
+    NSArray*titleArray =@[@"待付款",@"待评价",@"待收货",@"售后/退款"];
+    NSArray*imageArray =@[@"待付款",@"待评价",@"待收货",@"售后"];
     
+    for (int i =0; i<titleArray.count; i++) {
+        OrderButton*orderButton =[[OrderButton alloc]initWithFrame:CGRectMake(10.5*KproW+i*14.3*KproW+75*KproW*i, allLabel.bottom+10*KproH, 75*KproW, 61.5*KproH)];
+        orderButton.tag =1001+i;
+        [orderButton setTitle:titleArray[i] forState:UIControlStateNormal];
+        orderButton.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:10*KproH];
+        orderButton.titleLabel.textAlignment =NSTextAlignmentCenter;
+        [orderButton setTitleColor:[Utility colorWithHex:@"#9B9B9B"] forState:UIControlStateNormal];
+        [orderButton setImage:[UIImage imageNamed:imageArray[i]] forState:UIControlStateNormal];
+        [orderButton addTarget:self action:@selector(orderAction:) forControlEvents:UIControlEventTouchUpInside];
+        [self.orderView addSubview:orderButton];
+        
+    }
+    UIButton*all_ordersButton =[CreatControls createButtonWithFrame:CGRectMake(SCREENWIDTH-83*KproW, 10.5*KproH, 68*KproW, 18*KproH) Target:self Action:@selector(all_ordersAction:) Title:@"查看全部订单>"];
+    //
+    all_ordersButton.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:10*KproH];
+    all_ordersButton.titleLabel.textAlignment =NSTextAlignmentCenter;
+    [all_ordersButton setTitleColor:[Utility colorWithHex:@"#9B9B9B"] forState:UIControlStateNormal];
+    
+    [self.orderView addSubview:all_ordersButton];
+    
+    
+}
+//查看全部订单
+-(void)all_ordersAction:(UIButton*)button
+{
+    AllOrdersController *allOrdersVC=[[AllOrdersController alloc]init];
+    [self.navigationController pushViewController:allOrdersVC animated:YES];
+}
+//待收货、待评价、待付款等跳转
+-(void)orderAction:(UIButton*)button
+{
+    switch (button.tag) {
+        case 1001:
+        {
+            //待付款
+            PendingPaymentController *pendingPaymentVC=[[PendingPaymentController alloc]init];
+            [self.navigationController pushViewController:pendingPaymentVC animated:YES];
+        }
+            break;
+        case 1002:
+        {
+            //待评价
+            CommentController *commentVC=[[CommentController alloc]init];
+            [self.navigationController pushViewController:commentVC animated:YES];
+        }
+            break;
+        case 1003:
+        {
+            //待收货
+            ToBeReceivedController *  toBeReceivedVC=[[ToBeReceivedController alloc]init];
+            [self.navigationController pushViewController:toBeReceivedVC animated:YES];
+        }
+            break;
+        case 1004:
+        {
+            //售后退款
+            RefundController *refundVC=[[RefundController alloc]init];
+            [self.navigationController pushViewController:refundVC animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 //我的设置
 -(void)SettingAction:(UIButton*)button
@@ -180,28 +253,28 @@ static NSString*identifier =@"accountCell";
 {
     switch (indexPath.row) {
         case 0: {
-             //商品收藏
-        ProductCollectionController*product=[[ProductCollectionController alloc]init];
-        [self.navigationController pushViewController:product animated:YES];
-            }
+            //商品收藏
+            ProductCollectionController*product=[[ProductCollectionController alloc]init];
+            [self.navigationController pushViewController:product animated:YES];
+        }
             break;
         case 1: {
-             //收货地址
+            //收货地址
             ReceiveAddressController*ReceiveAddress=[[ReceiveAddressController alloc]init];
             [self.navigationController pushViewController:ReceiveAddress animated:YES];
         }
             break;
-      
+            
         case 2: {
-        //信用卡管理
-        CreditCardManageController*CreditCardManage=[[CreditCardManageController alloc]init];
+            //信用卡管理
+            CreditCardManageController*CreditCardManage=[[CreditCardManageController alloc]init];
             [self.navigationController pushViewController:CreditCardManage animated:YES];
         }
             break;
         case 3: {
-             //邀请好友
+            //邀请好友
             InviteFriendController*InviteFriend=[[InviteFriendController alloc]init];
-            [self.navigationController pushViewController:InviteFriend animated:YES];
+            [self.navigationController pushViewController:InviteFriend animated:NO];
         }
             break;
         case 4: {
@@ -219,13 +292,14 @@ static NSString*identifier =@"accountCell";
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
+
